@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  vars:
+      is_container: false
+
+  roles:
+    - windows_powershell_update 
