@@ -1,0 +1,21 @@
+---
+
+# - name: Role Setup
+#   include: setup.yml
+#   tags:
+#     - setup
+
+# - name: Configure Role
+#   include: configure.yml
+#   tags:
+#     - config
+
+# - name: Install Role
+#   include: install.yml
+#   tags:
+#     - install
+
+# - name: Test Role
+#   include: test.yml
+#   tags:
+#     - test

@@ -1,0 +1,4 @@
+---
+
+# - name: Run Powershell file
+#   win_shell: "{{ deploy_folder }}Upgrade-PS.ps1"

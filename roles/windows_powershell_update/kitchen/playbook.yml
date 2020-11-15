@@ -1,0 +1,5 @@
+---
+- name: windows_powershell_update
+  hosts: windows-servers
+  roles:
+    - windows_powershell_update

@@ -1,0 +1,7 @@
+I, [2020-11-15T23:47:23.880538 #957502]  INFO -- default-win2012r2core: -----> Setting up <default-win2012r2core>...
+I, [2020-11-15T23:47:23.881198 #957502]  INFO -- default-win2012r2core: Finished setting up <default-win2012r2core> (0m0.00s).
+I, [2020-11-15T23:47:23.881292 #957502]  INFO -- default-win2012r2core: -----> Verifying <default-win2012r2core>...
+I, [2020-11-15T23:47:23.901333 #957502]  INFO -- default-win2012r2core: Detected alternative framework tests for `inspec`
+I, [2020-11-15T23:47:24.553484 #957502]  INFO -- default-win2012r2core: Loaded profile 
+I, [2020-11-15T23:47:24.553577 #957502]  INFO -- default-win2012r2core: Loaded tests from {:path=>".home.gareth.Code.ge-contino.ansible-playbook-windows-server-pre-2019.kitchen.test.integration.default"} 
+I, [2020-11-15T23:47:24.696544 #957502]  INFO -- default-win2012r2core: Finished verifying <default-win2012r2core> (0m0.81s).

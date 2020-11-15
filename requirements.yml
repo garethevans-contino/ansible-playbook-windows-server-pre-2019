@@ -1,3 +1,14 @@
+# - name: deekayen.chocolatey
+#   src: https://github.com/deekayen/ansible-role-chocolatey.git
+
+- name: windows_common
+  src: https://github.com/garethevans-contino/ansible-role-windows-common.git
+  version: master
+
+- name: ansible-role-windows-test
+  src: https://github.com/garethevans-contino/ansible-role-windows-test.git
+  version: master
+
 - name: windows_powershell_update
   src: https://github.com/garethevans-contino/ansible-role-windows-powershell-install.git
   version: master

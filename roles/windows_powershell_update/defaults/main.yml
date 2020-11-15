@@ -1,0 +1,7 @@
+---
+# Default vars\
+
+# Paths
+## NOTE: TRAILING SLASH ON ALL PATHS!
+deploy_folder: C:\DeployFiles\
+configuration_scripts_folder: C:\DeployScripts\

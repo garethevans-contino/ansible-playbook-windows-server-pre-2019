@@ -21,5 +21,3 @@ echo "Installing roles into '${ROLE_FOLDER}' folder."
 # Run Ansible Galaxy to fetch the roles from the sources configured in the requirements.yml file.
 # -p tells the executable to download the files into the current directory.
 ansible-galaxy install -r requirements.yml -p "./${ROLE_FOLDER}"
-
-vagrant up

@@ -1,0 +1,15 @@
+load "/home/gareth/Code/ge-contino/ansible-playbook-windows-server-pre-2019/kitchen/configure/windows/2012R2/provision.rb"
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "mwrock/Windows2012R2"
+  c.vm.communicator = "winrm"
+  c.vm.network(:private_network, {:ip=>"172.28.128.11"})
+  c.vm.network(:forwarded_port, {:guest=>80, :host=>8080})
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-kitchen-default-win2012r2core-70dae2de-f70e-4025-b24f-52fe452a656a"
+    p.gui = true
+    p.linked_clone = true
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end
