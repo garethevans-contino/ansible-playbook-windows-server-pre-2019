@@ -2,7 +2,7 @@
 
 - name: windows_server_pre_2019
   hosts: all
-  roles:    
+  roles:
     - windows_common
     - windows_powershell_update
     - ansible-role-windows-test

@@ -1,0 +1,10 @@
+# General
+.vagrant/
+.kitchen/
+Gemfile.lock
+
+# Log files (if you are creating logs in debug mode, uncomment this)
+# *.log
+
+# Ansible role folder which can be rebuilt.
+roles/*

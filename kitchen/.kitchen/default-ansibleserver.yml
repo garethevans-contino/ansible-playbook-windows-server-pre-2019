@@ -1,7 +1,0 @@
----
-hostname: 127.0.0.1
-port: '2222'
-username: vagrant
-ssh_key: "/home/gareth/Code/ge-contino/ansible-playbook-windows-server-pre-2019/kitchen/.kitchen/kitchen-vagrant/default-ansibleserver/.vagrant/machines/default/virtualbox/private_key"
-last_action: verify
-last_error:

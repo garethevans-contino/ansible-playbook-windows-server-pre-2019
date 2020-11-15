@@ -1,17 +1,19 @@
 #!/bin/bash
 
+# shellcheck disable=SC2154
 REMOVE_ROLE_FOLDER=$false
 ROLE_FOLDER=roles
 
 # If the variable has a value...and it's true.
-if [[ "$1" ]] && $1 == $true ; then
-  echo "Remove Role Folder flag set to true."
-  REMOVE_ROLE_FOLDER=$1
+# shellcheck disable=SC2086
+if [[ "$1" ]] && $1 == $true; then
+	echo "Remove Role Folder flag set to true."
+	REMOVE_ROLE_FOLDER=$true
 fi
 
-if [ $REMOVE_ROLE_FOLDER ] ; then
-  echo "Removing '${ROLE_FOLDER}' folder"
-  rm -rf "${ROLE_FOLDER}"
+if [ "${REMOVE_ROLE_FOLDER}" ]; then
+	echo "Removing '${ROLE_FOLDER}' folder"
+	rm -rf "${ROLE_FOLDER}"
 fi
 
 # Create the roles directory if it doesnt exist.
