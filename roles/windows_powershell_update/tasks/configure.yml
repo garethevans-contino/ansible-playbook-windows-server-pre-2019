@@ -1,6 +1,0 @@
----
-
-- name: Unpack the Powershell Upgrade Template.
-  template:
-    src: "templates/Upgrade-PS.ps1.j2"
-    dest: "{{ deploy_folder }}Upgrade-PS.ps1"
