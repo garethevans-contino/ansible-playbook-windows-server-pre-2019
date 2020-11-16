@@ -23,3 +23,12 @@ echo "Installing roles into '${ROLE_FOLDER}' folder."
 # Run Ansible Galaxy to fetch the roles from the sources configured in the requirements.yml file.
 # -p tells the executable to download the files into the current directory.
 ansible-galaxy install -r requirements.yml -p "./${ROLE_FOLDER}"
+
+rm "kitchen/.kitchen.tests.yml.erb"
+
+for f in "${ROLE_FOLDER}"/*; do
+	if [ -d "$f" ]; then
+		echo "Writing \" - ${f}/kitchen/test/integration/default\" to the .kitchen.tests.yml.erb file."
+		echo "        - ${f}/kitchen/test/integration/default" >>kitchen/.kitchen.tests.yml.erb
+	fi
+done

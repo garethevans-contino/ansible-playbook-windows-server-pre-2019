@@ -51,6 +51,7 @@ platforms:
       format: documentation
       inspec_tests:
         - test/integration/default
+        - ../roles/windows_powershell_update/kitchen/test/integration/default
     provisioner:
       name: shell
 
